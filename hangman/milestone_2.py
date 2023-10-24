@@ -2,8 +2,6 @@ import random
 
 word_list = ['grapes','apple','apple','pineapple','banana']
 
-print(word_list)
-
 def random_choice(word_list):
     word = random.choice(word_list)
     print(word)
