@@ -3,7 +3,6 @@ import random
 word_list = ['grapes','apple','apple','pineapple','banana']
 def random_choice(word_list):
     word = random.choice(word_list)
-    print(word)
     return word
     
 
