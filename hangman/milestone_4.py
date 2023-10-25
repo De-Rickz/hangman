@@ -40,8 +40,13 @@ class Hangman:
             else:
                 self.check_guess(guess)
                 self.list_of_guesses.append(guess)   
-                 
+                
+        if self.num_lives == 0:
+            print(f"Game over! The word was {self.word}.")
+        else:
+            print(f"Congratulations! You guessed the word {self.word}.")
+
 
 if __name__ == "__main__":
-    game = Hangman()
-    game.ask_for_input()
+    game = Hangman(['grapes', 'apple', 'pineapple','strawberry', 'banana'])
+    game.ask_for_input()    
